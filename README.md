@@ -5,9 +5,11 @@ This project analyzes Electric Vehicle charging infrastructure, performance metr
 
 📊 Live Tableau Dashboard
 
-🔗 [https://public.tableau.com/views/YOUR_DASHBOARD_LINK](https://public.tableau.com/views/ELECTRICVEHICLECHARGEANDRANGEALAYSIS/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+🔗 [(https://public.tableau.com/views/ELECTRICVEHICLECHARGEANDRANGEALAYSIS/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
 
 📖 Live Tableau Story
 
-🔗 [https://public.tableau.com/views/YOUR_STORY_LINK](https://public.tableau.com/views/ELECTRICVEHICLECHARGEANDRANGEALAYSIS-STORY/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+🔗 [(https://public.tableau.com/views/ELECTRICVEHICLECHARGEANDRANGEALAYSIS-STORY/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
 
+🎥 Video Demonstration  
+🔗 [(https://drive.google.com/file/d/1D5lG57Z0gKKhxAOLcAVxPRmOmdqOfDpf/view?usp=sharin)]
