@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualization Tool for EV Charge and Range Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+      
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 70px;
+
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: #0a3d2f !important;
+    }
+
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+
+    .nav-link:hover {
+      color: #0a3d2f !important;
+    }
+
+    /* HOME SECTION */
+    .home-section {
+      padding: 120px 0 80px 0;
+    }
+
+    .home-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0a3d2f;
+    }
+
+    .home-img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .section-padding {
+      padding: 80px 0;
+    }
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #0a3d2f;
+    }
+
+    .about-img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* DASHBOARD FIX */
+    .tableau-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .tableauPlaceholder {
+      width: 100% !important;
+    }
+
+    footer {
+      background: #0a3d2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">EV Analytics</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="home-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h1 class="home-title">
+          Visualization Tool for Electric Vehicle Charge and Range Analysis
+        </h1>
+        <p class="mt-4">
+          A structured and interactive analytics platform designed to provide
+          insights into EV charging infrastructure, performance metrics,
+          powertrain distribution, and pricing trends.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Car Analytics Image -->
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2"
+             class="home-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-padding bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <!-- Relevant EV Analytics Image -->
+        <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b"
+             class="about-img">
+      </div>
+
+      <div class="col-md-6">
+        <h2>About the Project</h2>
+        <p>
+          This project integrates SQL-based data preprocessing and Tableau
+          interactive visualization to analyze electric vehicle market data.
+        </p>
+        <p>
+          It provides structured insights into charging station distribution,
+          brand comparison, efficiency analysis, powertrain segmentation,
+          and EV pricing trends across India.
+        </p>
+        <p>
+          The platform eliminates scattered data sources and presents everything
+          in a unified and visually intuitive dashboard environment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="section-padding">
+  <div class="container">
+    <h2>Interactive Dashboard</h2>
+
+    <div class="tableau-container">
+      <div class='tableauPlaceholder' id='vizDashboard'>
+        <object class='tableauViz'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='name' value='ELECTRICVEHICLECHARGEANDRANGEALAYSIS/Dashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+        </object>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="section-padding bg-light">
+  <div class="container">
+    <h2>Story Presentation</h2>
+
+    <div class="tableau-container">
+      <div class='tableauPlaceholder' id='vizStory'>
+        <object class='tableauViz'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='name' value='ELECTRICVEHICLECHARGEANDRANGEALAYSIS/Story1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+        </object>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p>
+      Developed as part of SmartBridge Internship Program.<br>
+      Email: navya0703@gmail.com
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Visualization Tool for EV Charge and Range Analysis
+</footer>
+
+<!-- TABLEAU SCRIPT -->
+<script>
+  function loadViz(id, height){
+    var divElement = document.getElementById(id);
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';
+    vizElement.style.height=height;
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  }
+
+  loadViz('vizDashboard','850px');
+  loadViz('vizStory','850px');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
